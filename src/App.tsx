@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+import Routes from './routes';
 import api from './services/api';
+
+import './assets/styles/global.css'
 
 function App() {
   const [apiResponse, setApiResponse] = useState([]);
@@ -24,9 +27,7 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Asian Media</h1>
-    </div>
+      <Routes/>
   );
 }
 
